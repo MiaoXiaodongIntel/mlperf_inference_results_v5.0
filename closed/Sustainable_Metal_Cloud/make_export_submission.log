@@ -1,8 +1,0 @@
-WARNING: This script cannot be executed from within the docker container.
-It must have access to the project root at ../../
-Purging measurements/ results/ compliance/ in the current directory
-make[1]: Entering directory '/raid/J54Y574/nv_mlperf-5.0.5/closed/NVIDIA'
-cp -R /raid/J54Y574/nv_mlperf-5.0.5/closed/NVIDIA/build/submission-staging/closed/Sustainable_Metal_Cloud/results .
-cp -R /raid/J54Y574/nv_mlperf-5.0.5/closed/NVIDIA/build/submission-staging/closed/Sustainable_Metal_Cloud/compliance .
-cp -R /raid/J54Y574/nv_mlperf-5.0.5/closed/NVIDIA/build/submission-staging/closed/Sustainable_Metal_Cloud/measurements .
-make[1]: Leaving directory '/raid/J54Y574/nv_mlperf-5.0.5/closed/NVIDIA'

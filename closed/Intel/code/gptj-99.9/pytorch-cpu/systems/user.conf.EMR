@@ -1,5 +1,0 @@
-gptj.Offline.target_qps = 3.6
-gptj.Server.target_qps = 1.85
-gptj.*.sample_concatenate_permutation = 1 
-gptj.Offline.min_query_count = 20000 
-gptj.Server.min_query_count = 13368

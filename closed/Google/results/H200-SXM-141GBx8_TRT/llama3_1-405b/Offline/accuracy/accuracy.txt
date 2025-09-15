@@ -1,6 +1,0 @@
-
-Results
-
-{'exact_match': 89.9708041032429, 'rougeL': 21.688728239185064, 'gen_len': 22741935, 'gen_num': 8313, 'gen_tok_len': 5368931, 'tokens_per_sample': 645.8}
-
-hash=d89be10f5ce269c752358dadd2dde8621ef1ac726068e5ed815c124d7796b24e

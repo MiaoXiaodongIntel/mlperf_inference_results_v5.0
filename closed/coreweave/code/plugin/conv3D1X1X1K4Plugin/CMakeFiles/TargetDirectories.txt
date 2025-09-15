@@ -1,3 +1,0 @@
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/conv3D1X1X1K4Plugin/CMakeFiles/conv3D1X1X1K4Plugin.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/conv3D1X1X1K4Plugin/CMakeFiles/edit_cache.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/conv3D1X1X1K4Plugin/CMakeFiles/rebuild_cache.dir

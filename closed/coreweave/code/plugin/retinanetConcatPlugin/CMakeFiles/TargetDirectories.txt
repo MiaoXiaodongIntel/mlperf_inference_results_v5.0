@@ -1,3 +1,0 @@
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/retinanetConcatPlugin/CMakeFiles/retinanetconcatplugin.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/retinanetConcatPlugin/CMakeFiles/edit_cache.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/retinanetConcatPlugin/CMakeFiles/rebuild_cache.dir

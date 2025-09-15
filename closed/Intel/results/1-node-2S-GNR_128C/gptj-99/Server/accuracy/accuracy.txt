@@ -1,15 +1,0 @@
-INFO:datasets:PyTorch version 2.6.0.dev20241010+cpu available.
-Downloading builder script:   0%|          | 0.00/6.27k [00:00<?, ?B/s]Downloading builder script: 100%|██████████| 6.27k/6.27k [00:00<00:00, 33.1MB/s]
-[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
-[nltk_data] Downloading package punkt_tab to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt_tab.zip.
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-INFO:absl:Using default tokenizer.
-
-Results
-
-{'rouge1': 42.9548, 'rouge2': 20.1209, 'rougeL': 29.9662, 'rougeLsum': 40.1022, 'gen_len': 4000345, 'gen_num': 13368}
-
-hash=59cfc28475a367dcb90eefccfe8e6a53abcd588c190fd81052d087b942520513

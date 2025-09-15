@@ -1,3 +1,0 @@
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/pixelShuffle3DPlugin/CMakeFiles/pixelshuffle3dplugin.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/pixelShuffle3DPlugin/CMakeFiles/edit_cache.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/pixelShuffle3DPlugin/CMakeFiles/rebuild_cache.dir

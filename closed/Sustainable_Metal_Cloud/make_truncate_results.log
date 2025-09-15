@@ -1,6 +1,0 @@
-INFO:main:closed/Sustainable_Metal_Cloud/results/H200-SXM-141GBx8_TRT/retinanet/Offline/accuracy/mlperf_log_accuracy.json truncated
-INFO:main:closed/Sustainable_Metal_Cloud/results/H200-SXM-141GBx8_TRT/retinanet/Server/accuracy/mlperf_log_accuracy.json truncated
-INFO:main:closed/Sustainable_Metal_Cloud/compliance/H200-SXM-141GBx8_TRT/retinanet/Offline/TEST01/accuracy already has hash and size seems truncated
-INFO:main:closed/Sustainable_Metal_Cloud/compliance/H200-SXM-141GBx8_TRT/retinanet/Server/TEST01/accuracy already has hash and size seems truncated
-INFO:main:Make sure you keep a backup of closed/Sustainable_Metal_Cloud/build/full_results in case mlperf wants to see the original accuracy logs
-Full accuracy logs stored in build/full_results/. Truncated results stored in /work/build/submission-staging/results/.

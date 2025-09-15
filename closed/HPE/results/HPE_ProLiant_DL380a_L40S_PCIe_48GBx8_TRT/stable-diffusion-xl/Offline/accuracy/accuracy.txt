@@ -1,3 +1,0 @@
-Accuracy Results: {'FID_SCORE': '23.550848825622325', 'CLIP_SCORE': '31.789734811782836'}
-
-hash=fbca917e929b6a092cd24657aa28eb6a0fb277d4f02ea7fbec5ff6b0cf2f7fb7

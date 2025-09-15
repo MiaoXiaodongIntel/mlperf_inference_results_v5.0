@@ -1,6 +1,0 @@
-
-Results
-
-{'rouge1': 44.8117, 'rouge2': 22.3683, 'rougeL': 29.1731, 'rougeLsum': 42.3377, 'gen_len': 26328239, 'gen_num': 24576, 'gen_tok_len': 6702605, 'tokens_per_sample': 272.7}
-
-hash=1f0b87d8771d0371c34aca7b18c3d9bd0afd0ed7e730553aa052ece369707237

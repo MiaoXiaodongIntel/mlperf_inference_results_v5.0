@@ -1,3 +1,0 @@
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/DLRMv2EmbeddingLookupPlugin/CMakeFiles/dlrmv2embeddinglookupplugin.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/DLRMv2EmbeddingLookupPlugin/CMakeFiles/edit_cache.dir
-/mnt/data/rwang/tmp/closed/NVIDIA/code/plugin/DLRMv2EmbeddingLookupPlugin/CMakeFiles/rebuild_cache.dir

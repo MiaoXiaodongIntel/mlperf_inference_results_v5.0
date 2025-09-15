@@ -1,1 +1,0 @@
-echo "No calibration needed for this workload. Please proceed to the next step."

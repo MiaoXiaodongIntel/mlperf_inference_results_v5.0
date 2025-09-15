@@ -1,2 +1,0 @@
-gptj.Offline.target_qps = 4.35
-gptj.Server.target_qps = 2.45

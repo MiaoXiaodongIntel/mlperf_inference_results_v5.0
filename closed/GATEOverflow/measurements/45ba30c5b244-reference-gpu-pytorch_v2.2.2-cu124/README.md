@@ -1,3 +1,0 @@
-| Model         | Scenario     |   Accuracy |   Throughput |   Latency (in ms) | Power Efficiency (in samples/J)   | TEST01   | TEST04   |
-|---------------|--------------|------------|--------------|-------------------|-----------------------------------|----------|----------|
-| pointpainting | singlestream |    54.2562 |        1.371 |           729.221 |                                   | passed   | passed   |
