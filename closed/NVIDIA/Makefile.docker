@@ -110,9 +110,9 @@ endif
 
 # If specific DOCKER_COMMAND is not passed, launch interactive docker container session.
 ifeq ($(DOCKER_COMMAND),)
-    DOCKER_INTERACTIVE_FLAGS = -it
+    DOCKER_INTERACTIVE_FLAGS = -itd
 else
-    DOCKER_INTERACTIVE_FLAGS =
+    DOCKER_INTERACTIVE_FLAGS = -d
 endif
 
 
