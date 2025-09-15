@@ -43,7 +43,7 @@ RUN echo -e "\nexport PS1=\"(mlperf) \\u@\${HOST_HOSTNAME}:\\w\\$ \"" >> /${USER
     && echo -e "\n%sudo ALL=(ALL:ALL) NOPASSWD:ALL\n" >> /etc/sudoers
 
 # Docker socket permissions
-RUN chmod 666 /var/run/docker.sock
+# RUN chmod 666 /var/run/docker.sock
 
 # SSH configuration
 RUN ln -s /mnt/${USER}/.ssh /${USER}/.ssh \
