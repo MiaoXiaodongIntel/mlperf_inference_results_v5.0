@@ -244,7 +244,7 @@ launch_docker:
 		--shm-size=32gb \
 		--ulimit memlock=-1 \
 		-v $$SSH_AUTH_SOCK:/run/host-services/ssh-auth.sock \
-		-v /etc/timezone:/etc/timezone:ro -v /etc/localtime:/etc/localtime:ro \
+		-v /etc/localtime:/etc/localtime:ro \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		--security-opt apparmor=unconfined --security-opt seccomp=unconfined \
 		--name $(DOCKER_NAME) -h $(subst _,-,$(shell echo $(DOCKER_NAME) | cut -c -64)) --add-host $(DOCKER_NAME):127.0.0.1 \
