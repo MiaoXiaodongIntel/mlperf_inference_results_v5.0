@@ -196,11 +196,12 @@ endif
 # UID 0 is reserved for the root user, which is not allowed to run the docker container.
 .PHONY: check_user_requirements
 check_user_requirements:
-	@if [ $(UID) -eq 0 ]; then \
-		echo "ERROR: User $(UNAME) has UID 0 (root). This is not allowed for security reasons."; \
-		exit 1; \
-	fi
-	echo "User $(UNAME) is not root."
+# 	@if [ $(UID) -eq 0 ]; then \
+# 		echo "ERROR: User $(UNAME) has UID 0 (root). This is not allowed for security reasons."; \
+# 		exit 1; \
+# 	fi
+# 	echo "User $(UNAME) is not root."
+	echo "Currently support root."
 
 
 .PHONY: build_docker

@@ -24,27 +24,27 @@ ARG USER
 # Change the password for the root user.
 RUN echo root:root | chpasswd
   
-RUN if [ "$UID" -eq 1000 ]; then \
-    # Modify existing ubuntu user to match the user name and UID/GID if UID is 1000
-    usermod --login $USER --home /home/$USER ubuntu && \
-    groupmod --new-name $USER ubuntu && \
-    usermod --uid $UID --gid $GID $USER && \
-    mv /home/ubuntu /home/$USER && \
-    chown -R $UID:$GID /home/$USER; \
-else \
-    # Create new user for non-1000 UIDs
-    groupadd -f -g ${GID} ${GROUP} \
-    && useradd -G sudo -g ${GID} -u ${UID} -m ${USER} \
-    && echo ${USER}:${USER} | chpasswd; \
-fi
+# RUN if [ "$UID" -eq 1000 ]; then \
+#     # Modify existing ubuntu user to match the user name and UID/GID if UID is 1000
+#     usermod --login $USER --home /home/$USER ubuntu && \
+#     groupmod --new-name $USER ubuntu && \
+#     usermod --uid $UID --gid $GID $USER && \
+#     mv /home/ubuntu /home/$USER && \
+#     chown -R $UID:$GID /home/$USER; \
+# else \
+#     # Create new user for non-1000 UIDs
+#     groupadd -f -g ${GID} ${GROUP} \
+#     && useradd -G sudo -g ${GID} -u ${UID} -m ${USER} \
+#     && echo ${USER}:${USER} | chpasswd; \
+# fi
 
 # Shell prompt and sudo configuration
-RUN echo -e "\nexport PS1=\"(mlperf) \\u@\${HOST_HOSTNAME}:\\w\\$ \"" >> /home/${USER}/.bashrc \
+RUN echo -e "\nexport PS1=\"(mlperf) \\u@\${HOST_HOSTNAME}:\\w\\$ \"" >> /${USER}/.bashrc \
     && echo -e "\n%sudo ALL=(ALL:ALL) NOPASSWD:ALL\n" >> /etc/sudoers
 
 # Docker socket permissions
 RUN chmod 666 /var/run/docker.sock
 
 # SSH configuration
-RUN ln -s /mnt/home/${USER}/.ssh /home/${USER}/.ssh \
-    && echo -e "\nssh-add /home/${USER}/.ssh/* > /dev/null 2>&1" >> /home/${USER}/.bashrc
+RUN ln -s /mnt/${USER}/.ssh /${USER}/.ssh \
+    && echo -e "\nssh-add /${USER}/.ssh/* > /dev/null 2>&1" >> /${USER}/.bashrc
