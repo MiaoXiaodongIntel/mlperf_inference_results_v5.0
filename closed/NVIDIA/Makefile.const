@@ -26,7 +26,7 @@ VERSION := $(shell cat $(PROJECT_ROOT)/VERSION)
 
 # System variables / values
 SHELL := /bin/bash
-ARCH := $(shell uname -p)
+ARCH := $(shell uname -m)
 UNAME := $(shell whoami)
 UID := $(shell id -u `whoami`)
 HOSTNAME := $(shell hostname)
