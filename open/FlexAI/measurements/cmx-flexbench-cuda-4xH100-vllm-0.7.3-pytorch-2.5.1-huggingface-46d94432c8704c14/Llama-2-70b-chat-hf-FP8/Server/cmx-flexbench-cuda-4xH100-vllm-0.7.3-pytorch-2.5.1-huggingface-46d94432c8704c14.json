@@ -1,7 +1,0 @@
-{
-  "input_data_types": "int32",
-  "retraining": "no",
-  "starting_weights_filename": "https://huggingface.co/nm-testing/Llama-2-70b-chat-hf-FP8",
-  "weight_data_types": "fp8",
-  "weight_transformations": "quantization"
-}

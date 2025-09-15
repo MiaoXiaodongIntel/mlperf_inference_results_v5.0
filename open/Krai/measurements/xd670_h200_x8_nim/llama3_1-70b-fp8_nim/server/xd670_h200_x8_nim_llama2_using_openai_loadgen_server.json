@@ -1,7 +1,0 @@
-{
-    "retraining": "no",
-    "input_data_types": "int32",
-    "weight_data_types": "fp16",
-    "starting_weights_filename": "https://docs.nvidia.com/nim/large-language-models/1.5.0/supported-models.html#llama-3-1-70b-instruct",
-    "weight_transformations": "quantization, affine fusion"
-}

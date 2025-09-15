@@ -1,7 +1,0 @@
-{
-    "retraining": "no",
-    "input_data_types": "int32",
-    "weight_data_types": "fp8",
-    "starting_weights_filename": "https://huggingface.co/neuralmagic/Meta-Llama-3.1-70B-Instruct-FP8",
-    "weight_transformations": "none"
-}

@@ -1,4 +1,0 @@
-
-19 warnings encountered. See detailed log.
-
-1 ERROR encountered. See detailed log.

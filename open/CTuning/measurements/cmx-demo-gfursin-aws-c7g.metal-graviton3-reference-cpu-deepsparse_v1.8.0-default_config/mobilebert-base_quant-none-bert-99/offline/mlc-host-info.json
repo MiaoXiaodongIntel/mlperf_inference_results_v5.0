@@ -1,9 +1,0 @@
-{
-  "os_version": "Linux-6.8.0-1021-aws-aarch64-with-glibc2.35",
-  "cpu_version": "aarch64",
-  "python_version": "3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]",
-  "os_version_sys": "ubuntu 22.04",
-  "system_name": "ip-172-31-64-203",
-  "mlc_repo_name": "mlcommons@mlperf-automations",
-  "mlc_repo_git_hash": "c8cb2c378fcc84d44fe20a81ef24956bc93dffc0"
-}

@@ -1,7 +1,0 @@
-{
-  "input_data_types": "int32",
-  "retraining": "no",
-  "starting_weights_filename": "https://huggingface.co/nm-testing/Llama-3.3-70B-Instruct-FP8-dynamic",
-  "weight_data_types": "bfloat16",
-  "weight_transformations": "none"
-}

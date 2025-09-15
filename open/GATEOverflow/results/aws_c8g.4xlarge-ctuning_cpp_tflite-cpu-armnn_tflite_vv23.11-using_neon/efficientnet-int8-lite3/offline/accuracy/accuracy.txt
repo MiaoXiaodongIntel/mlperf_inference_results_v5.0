@@ -1,3 +1,0 @@
-accuracy=76.416%, good=38208, total=50000
-
-hash=f4c0d59a77ebcefc829f52d948da038bf52b3202a0783043b4e8ef10be5f6e20
