@@ -97,6 +97,8 @@ ifdef CCACHE_DIR
     DOCKER_MOUNTS += -v $(CCACHE_DIR):/home/$(UNAME)/.ccache
     DOCKER_ENV_VAR += -e CCACHE_DIR=/home/$(UNAME)/.ccache
 endif
+DOCKER_ENV_VAR += -e http_proxy=http://proxy-dmz.intel.com:911
+DOCKER_ENV_VAR += -e https_proxy=http://proxy-dmz.intel.com:912
 
 # Handle different nvidia-docker version. Do not use nvidia-docker when running with CPUs
 ifneq ($(wildcard /usr/bin/nvidia-docker),)
