@@ -310,6 +310,8 @@ else
 		&& cd $(TRTLLM_DIR) \
 		&& git fetch \
 		&& git reset --hard HEAD \
+		&& git restore . \
+		&& git submodule foreach --recursive git restore . \
 		&& git checkout $(TRTLLM_PUBLIC_HASH) \
 		&& git submodule update --init --recursive
 endif
