@@ -285,6 +285,22 @@ ifeq ($(NVSI_ARCH), Hopper)
 endif
 endif
 
+CUTLASS_PYPROJECT_TOML_CONTENT = [build-system]\n\
+requires = ["setuptools>=65.5.0", "wheel"]\n\
+build-backend = "setuptools.build_meta"\n\
+\n\
+[project]\n\
+name = "cutlass_library"\n\
+version = "3.6.0"\n\
+description = "CUTLASS library generation scripts"\n\
+authors = [{ name = "NVIDIA CORPORATION & AFFILIATES" }]\n\
+readme = ""\n\
+requires-python = ">=3.7"\n\
+dependencies = []\n\
+\n\
+[tool.setuptools.packages.find]\n\
+where = ["." ]\n\
+include = ["cutlass_library*"]
 
 .PHONY: clone_trt_llm
 clone_trt_llm:
@@ -314,6 +330,8 @@ else
 		&& git submodule foreach --recursive git restore . \
 		&& git checkout $(TRTLLM_PUBLIC_HASH) \
 		&& git submodule update --init --recursive
+
+	@echo -e '$(CUTLASS_PYPROJECT_TOML_CONTENT)' > $(BUILD_DIR)/TRTLLM/3rdparty/cutlass/python/pyproject.toml
 endif
 
 
