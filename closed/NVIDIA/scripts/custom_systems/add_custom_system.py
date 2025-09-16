@@ -258,7 +258,7 @@ def yes_no_prompt(message, default=True):
 
     resp = None
     while resp is None or resp.lower() not in choices:
-        resp = input(f"{message} {choice_str}: ")
+        resp = "y" # input(f"{message} {choice_str}: ")
 
     if resp == "":
         return default
@@ -314,7 +314,7 @@ def main():
     sys_id = DETECTED_SYSTEM.extras.get("id", "")
 
     while not SYSTEM_NAME_PATTERN.fullmatch(sys_id):
-        sys_id = input("=> Specify the system ID to use for the current system: ")
+        sys_id = "ACC_AI_HNC" # input("=> Specify the system ID to use for the current system: ")
 
         # Check if the chosen name conflicts with an existing name
         if sys_id in custom_systems:
