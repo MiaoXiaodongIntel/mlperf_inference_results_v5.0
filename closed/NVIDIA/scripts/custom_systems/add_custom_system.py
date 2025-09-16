@@ -332,13 +332,13 @@ def main():
     reload_system_list()
     print("  => Reloaded system list. Matched System ID:", DETECTED_SYSTEM.extras["id"])
 
-    print("=> This script will generate Benchmark Configuration stubs for the detected system.")
-    generate_benchmark_confs = yes_no_prompt("Continue?")
-    if not generate_benchmark_confs:
-        return
+    # print("=> This script will generate Benchmark Configuration stubs for the detected system.")
+    # generate_benchmark_confs = yes_no_prompt("Continue?")
+    # if not generate_benchmark_confs:
+    #     return
 
-    print(f"=> Generating configs for {sys_id}...")
-    generate_configs(DETECTED_SYSTEM)
+    # print(f"=> Generating configs for {sys_id}...")
+    # generate_configs(DETECTED_SYSTEM)
 
 
 if __name__ == "__main__":
