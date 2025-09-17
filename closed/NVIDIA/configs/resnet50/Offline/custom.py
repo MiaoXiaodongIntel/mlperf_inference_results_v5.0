@@ -5,13 +5,13 @@ from . import *
 
 
 @ConfigRegistry.register(HarnessType.LWIS, AccuracyTarget.k_99, PowerSetting.MaxP)
-class AI_HNC(OfflineGPUBaseConfig):
-    system = KnownSystem.AI_HNC
+class ACC_AI_HNC(OfflineGPUBaseConfig):
+    system = KnownSystem.ACC_AI_HNC
 
     gpu_batch_size = {'resnet50': 2048}
     offline_expected_qps = 57000
 
 
 @ConfigRegistry.register(HarnessType.Triton, AccuracyTarget.k_99, PowerSetting.MaxP)
-class AI_HNC_Triton(AI_HNC):
+class ACC_AI_HNC_Triton(ACC_AI_HNC):
     use_triton = True
