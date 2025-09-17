@@ -35,6 +35,7 @@ download_data: link_dirs
 
 .PHONY: preprocess_data
 preprocess_data: link_dirs
+	@pip install numpy==1.26.4
 	@$(foreach _benchmark,$(BENCHMARKS),$(PYTHON3_CMD) -m code.$(_benchmark).tensorrt.preprocess_data --data_dir=$(DATA_DIR) --preprocessed_data_dir=$(PREPROCESSED_DATA_DIR) &&) \
 		echo "Finished preprocessing all the datasets!"
 
