@@ -13,6 +13,7 @@ geventhttpclient==2.3.3
 cuda-python==12.6.2
 pynvml==11.5.0
 plotly
+simplejson
 git+https://github.com/NVIDIA/dllogger@26a0f8f1958de2c0c460925ff6102a4d2486d6cc
 git+https://github.com/NVIDIA/mlperf-common.git@training-v4.1-rc0
 git+https://github.com/mlcommons/logging.git@4.1.0-rc3
