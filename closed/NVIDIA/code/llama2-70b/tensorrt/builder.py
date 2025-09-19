@@ -48,7 +48,7 @@ class LLAMA2EngineBuilder(TRTLLMBuilder,
         batch_size: int = 16,
 
         calib_dataset_path: os.PathLike = "/work/build/preprocessed_data/llama2-70b/mlperf_llama2_openorca_calibration_1k",
-        calib_batch_size: int = 1024,
+        calib_batch_size: int = 1000,
 
         *args,
         **kwargs,
