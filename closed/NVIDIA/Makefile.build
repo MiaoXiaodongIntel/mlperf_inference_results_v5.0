@@ -410,7 +410,8 @@ build_trt_llm:
 	else \
 		echo "Model archive not found in /opt, skipping extraction."; \
 	fi
-
+# Mainly to add the huggingface token required by /work/build/TRTLLM/docs/source/quick-start-guide.md
+	@pip install huggingface_hub && huggingface-cli login --token $(HUGGINGFACE_HUB_TOKEN)
 
 # Build TensorRT plugins.
 .PHONY: build_plugins

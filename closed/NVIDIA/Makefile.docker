@@ -99,6 +99,10 @@ ifdef CCACHE_DIR
 endif
 DOCKER_ENV_VAR += -e http_proxy=http://proxy-dmz.intel.com:911
 DOCKER_ENV_VAR += -e https_proxy=http://proxy-dmz.intel.com:912
+ifndef HUGGINGFACE_HUB_TOKEN
+	$(error not pass env HUGGINGFACE_HUB_TOKEN!)
+endif
+DOCKER_ENV_VAR += -e HUGGINGFACE_HUB_TOKEN=$(HUGGINGFACE_HUB_TOKEN)
 
 # Handle different nvidia-docker version. Do not use nvidia-docker when running with CPUs
 ifneq ($(wildcard /usr/bin/nvidia-docker),)
