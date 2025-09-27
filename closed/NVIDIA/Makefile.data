@@ -36,7 +36,15 @@ download_data: link_dirs
 .PHONY: preprocess_data
 preprocess_data: link_dirs
 	@pip install numpy==1.26.4
-	@$(foreach _benchmark,$(BENCHMARKS),$(PYTHON3_CMD) -m code.$(_benchmark).tensorrt.preprocess_data --data_dir=$(DATA_DIR) --preprocessed_data_dir=$(PREPROCESSED_DATA_DIR) &&) \
-		echo "Finished preprocessing all the datasets!"
+	@mkdir -p $(PREPROCESSED_DATA_DIR)/logs
+	@for benchmark in $(BENCHMARKS); do \
+		echo "Preprocessing data for $$benchmark..."; \
+		$(PYTHON3_CMD) -m code.$$benchmark.tensorrt.preprocess_data --data_dir=$(DATA_DIR) --preprocessed_data_dir=$(PREPROCESSED_DATA_DIR) 2>&1 | tee $(PREPROCESSED_DATA_DIR)/logs/preprocess_$$benchmark.log; \
+		if [ $${PIPESTATUS[0]} -ne 0 ]; then \
+			echo "ERROR: Preprocessing failed for $$benchmark. Check log: $(PREPROCESSED_DATA_DIR)/logs/preprocess_$$benchmark.log"; \
+			exit 1; \
+		fi; \
+	done
+	@echo "Finished preprocessing all the datasets!"
 
 endif # ifndef MAKEFILE_DATA_INCLUDED
