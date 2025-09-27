@@ -27,7 +27,8 @@ function download_file {
         echo "Creating directory ${_SUB_DIR}"
         mkdir -p ${_SUB_DIR}
     fi
-    echo "Downloading $2 $1..." \
-        && wget $3 -O ${_SUB_DIR}/$4 \
-        && echo "Saved $2 $1 to ${_SUB_DIR}/$4!"
+    echo "Downloading $2 $1..."
+    wget $3 -O ${_SUB_DIR}/$4 2>&1 | tee ${_SUB_DIR}/wget_${4}.log
+    # curl -o ${_SUB_DIR}/$4 -L $3
+    echo "Saved $2 $1 to ${_SUB_DIR}/$4!"
 }
