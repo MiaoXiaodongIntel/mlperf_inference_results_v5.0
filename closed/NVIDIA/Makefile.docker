@@ -145,6 +145,8 @@ ifeq ($(ENV), dev)
     CONTAINER_REGISTRY := gitlab-master.nvidia.com/mlpinf/mlperf-inference
     DOCKER_BUILD_ARGS = --build-arg BASE_IMAGE=$(CONTAINER_REGISTRY):$(BASE_IMAGE_NAME) \
 		--build-arg ENV=$(ENV) \
+		--build-arg HTTP_PROXY=http://proxy-dmz.intel.com:911 \
+		--build-arg HTTPS_PROXY=http://proxy-dmz.intel.com:912 \
 		--build-arg BUILD_CONTEXT=$(BUILD_CONTEXT) \
 		--build-arg USE_NIGHTLY=$(USE_NIGHTLY) \
 		--build-arg CUDA_VER=$(CUDA_VER) \
@@ -164,6 +166,8 @@ else ifeq ($(ENV), release)
     endif
     DOCKER_BUILD_ARGS := --build-arg BASE_IMAGE=$(CONTAINER_REGISTRY):$(BASE_IMAGE_NAME) \
 		--build-arg ENV=$(ENV) \
+		--build-arg HTTP_PROXY=http://proxy-dmz.intel.com:911 \
+		--build-arg HTTPS_PROXY=http://proxy-dmz.intel.com:912 \
 		--build-arg BUILD_CONTEXT=$(BUILD_CONTEXT) \
 		--build-arg MITTEN_HASH=$(MITTEN_PUBLIC_HASH) \
 		--build-arg INSTALL_RGAT_DEPS=$(INSTALL_RGAT_DEPS)
