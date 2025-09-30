@@ -8,7 +8,7 @@ from . import *
 class ACC_AI_HNC(OfflineGPUBaseConfig):
     system = KnownSystem.ACC_AI_HNC
 
-    gpu_batch_size = {'gptj': 192}
+    gpu_batch_size = {'gptj': 64}
     offline_expected_qps = 16
     precision = "fp8"
     checkpoint_dir: str = "/work/build/models/GPTJ-6B/checkpoint-final"
