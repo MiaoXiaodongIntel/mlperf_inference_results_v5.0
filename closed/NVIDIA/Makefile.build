@@ -253,7 +253,8 @@ clone_loadgen:
 		&& cd $(INFERENCE_DIR) \
 		&& git fetch \
 		&& git checkout $(INFERENCE_HASH)
-
+# Patch GPT-J evaluation.py to use the same model path with preprocess_data.py
+	@sed -i 's|model_name = "EleutherAI/gpt-j-6B"|model_name = "/work/build/models/GPTJ-6B/checkpoint-final"|g' /work/build/inference/language/gpt-j/evaluation.py
 
 # TODO: Need temporaray fix to support multi-gpu
 # NOTE: AARCH64 needs patch for successful build
